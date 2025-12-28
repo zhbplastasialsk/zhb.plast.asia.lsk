@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТОО ЖБ ПЛАСТ АЗИЯ | Собственное производство и проекты</title>
+    <style>
+        :root { --main: #003366; --accent: #ff9900; --wa: #25d366; --bg: #f4f7f9; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: #333; scroll-behavior: smooth; background: var(--bg); }
+        
+        nav { background: #fff; padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-container { width: 90%; max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: bold; color: var(--main); font-size: 1.2em; text-decoration: none; }
+        .nav-links a { text-decoration: none; color: #555; margin-left: 15px; font-weight: 500; font-size: 0.9em; }
+
+        header { background: linear-gradient(rgba(0,51,102,0.85), rgba(0,51,102,0.85)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000'); background-size: cover; color: white; padding: 80px 20px; text-align: center; }
+        
+        section { padding: 70px 0; }
+        .container { width: 90%; max-width: 1100px; margin: auto; }
+        h2 { color: var(--main); text-align: center; margin-bottom: 30px; font-size: 2em; }
+        h2::after { content: ''; display: block; width: 50px; height: 3px; background: var(--accent); margin: 10px auto; }
+
+        /* Стили для карточек и сеток */
+        .white-section { background: #fff; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .service-card { background: var(--bg); padding: 30px; border-radius: 8px; border-top: 4px solid var(--main); }
+
+        /* Сетка фото (универсальная) */
+        .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 15px; }
+        .photo-grid.double { grid-template-columns: repeat(2, 1fr); }
+        .photo-box { background: #eee; aspect-ratio: 4/3; border-radius: 6px; overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; }
+        .photo-box img { width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 2; }
+        .photo-box::before { content: 'ФОТО'; color: #bbb; font-size: 0.6em; position: absolute; }
+
+        .project-card { background: white; padding: 25px; border-radius: 12px; margin-bottom: 35px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .project-card h3 { margin-top: 0; color: var(--main); }
+
+        .btn { display: inline-block; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; margin: 10px; transition: 0.3s; }
+        .btn-wa { background: var(--wa); color: white; }
+        .btn-call { background: var(--main); color: white; }
+
+        footer { background: #1a1a1a; color: white; padding: 50px 20px; text-align: center; }
+        @media (max-width: 768px) { .photo-grid { grid-template-columns: 1fr !important; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="#" class="logo">ЖБ ПЛАСТ АЗИЯ</a>
+        <div class="nav-links">
+            <a href="#about">О нас</a>
+            <a href="#production">Производство</a>
+            <a href="#services">Услуги</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+    </div>
+</nav>
+
+<header>
+    <div class="container">
+        <h1>ТОО "ЖБ ПЛАСТ АЗИЯ"</h1>
+        <p>Собственное производство и профессиональный монтаж трубопроводов</p>
+        <div style="margin-top: 30px;">
+            <a href="https://wa.me/77022885343" class="btn btn-wa">WhatsApp Консультация</a>
+            <a href="tel:87022885343" class="btn btn-call">Позвонить</a>
+        </div>
+    </div>
+</header>
+
+<section id="production" class="white-section">
+    <div class="container">
+        <h2>Собственное производство</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 30px; line-height: 1.6;">
+            Наличие собственной производственной базы в г. Лисаковск позволяет нам оперативно изготавливать металлоконструкции любой сложности, фасонные изделия для трубопроводов и нестандартное оборудование, снижая стоимость и сроки для конечного заказчика.
+        </p>
+        <div class="photo-grid">
+            <div class="photo-box"><img src="prod1.jpg" onerror="this.style.opacity='0'"></div>
+            <div class="photo-box"><img src="prod2.jpg" onerror="this.style.opacity='0'"></div>
+            <div class="photo-box"><img src="prod3.jpg" onerror="this.style.opacity='0'"></div>
+            <div class="photo-box"><img src="prod4.jpg" onerror="this.style.opacity='0'"></div>
+            <div class="photo-box"><img src="prod5.jpg" onerror="this.style.opacity='0'"></div>
+            <div class="photo-box"><img src="prod6.jpg" onerror="this.style.opacity='0'"></div>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <h2>Наши услуги</h2>
+        <div class="services-grid">
+            <div class="service-card"><h3>Ремонт сетей</h3><p>Устранение аварий и плановая замена труб водоснабжения и отопления.</p></div>
+            <div class="service-card"><h3>Монтаж МК</h3><p>Сварка и сборка сложных промышленных металлоконструкций.</p></div>
+            <div class="service-card"><h3>Спецработы</h3><p>Демонтаж промышленных зданий, монтаж КНС и систем орошения.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="white-section">
+    <div class="container">
+        <h2>Выполненные проекты</h2>
+        
+        <div class="project-card">
+            <h3>Замена металлоконструкций (ГМО)</h3>
+            <div class="photo-grid">
+                <div class="photo-box"><img src="gmo_g1.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="gmo_g2.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="gmo_g3.jpg" onerror="this.style.opacity='0'"></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Ремонт ЛЭП</h3>
+            <div class="photo-grid">
+                <div class="photo-box"><img src="lep1.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="lep2.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="lep3.jpg" onerror="this.style.opacity='0'"></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Пульпопроводы (ГМО)</h3>
+            <div class="photo-grid">
+                <div class="photo-box"><img src="gmo_p1.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="gmo_p2.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="gmo_p3.jpg" onerror="this.style.opacity='0'"></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Демонтаж ГМО</h3>
+            <div class="photo-grid">
+                <div class="photo-box"><img src="gmo_d1.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="gmo_d2.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="gmo_d3.jpg" onerror="this.style.opacity='0'"></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Отопление бункера</h3>
+            <div class="photo-grid">
+                <div class="photo-box"><img src="otop1.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="otop2.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="otop3.jpg" onerror="this.style.opacity='0'"></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Теплотрасса (Лисаковск)</h3>
+            <div class="photo-grid">
+                <div class="photo-box"><img src="lis_t1.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="lis_t2.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="lis_t3.jpg" onerror="this.style.opacity='0'"></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Ремонт водовода</h3>
+            <div class="photo-grid">
+                <div class="photo-box"><img src="vod_1.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="vod_2.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="vod_3.jpg" onerror="this.style.opacity='0'"></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Теплотрасса (Рудный)</h3>
+            <div class="photo-grid">
+                <div class="photo-box"><img src="rud_t1.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="rud_t2.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="rud_t3.jpg" onerror="this.style.opacity='0'"></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Монтаж КНС</h3>
+            <div class="photo-grid">
+                <div class="photo-box"><img src="kns1.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="kns2.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="kns3.jpg" onerror="this.style.opacity='0'"></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Монтаж коллектора</h3>
+            <div class="photo-grid double">
+                <div class="photo-box"><img src="kol1.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="kol2.jpg" onerror="this.style.opacity='0'"></div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Система орошения (Караганда)</h3>
+            <div class="photo-grid">
+                <div class="photo-box"><img src="oro1.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="oro2.jpg" onerror="this.style.opacity='0'"></div>
+                <div class="photo-box"><img src="oro3.jpg" onerror="this.style.opacity='0'"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer id="contacts">
+    <div class="container">
+        <h2>Контакты</h2>
+        <p>Погорелов Виталий Вячеславович</p>
+        <a href="tel:87022885343" style="color:white; display:block; margin: 10px; font-size: 1.2em;">8 702 288 53 43</a>
+        <a href="tel:87710944748" style="color:white; display:block; margin: 10px; font-size: 1.2em;">8 771 094 47 48</a>
+        <p>© 2021-2025 ТОО "ЖБ ПЛАСТ АЗИЯ" | г. Лисаковск</p>
+    </div>
+</footer>
+
+</body>
+</html>
